@@ -63,9 +63,11 @@ export const editMusic = async (
         if (imagePath !== undefined) updateFields.imagePath = imagePath;
         if (duration !== undefined) updateFields.duration = duration;
 
-        const Result = await Music.updateOne({ _id: musicId }, {
-            $set: updateFields
-        }, { new: true })
+        const Result = await Music.findOneAndUpdate(
+            { _id: musicId },
+            { $set: updateFields },
+            { new: true } 
+        );
         res.status(200).json(Result);
     } catch (err) {
         console.error(err);
