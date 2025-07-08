@@ -37,7 +37,14 @@
     "jsonfile": "^6.1.0",
     "module-alias": "^2.2.3",
     "mongoose": "^8.16.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.0.3",
+    "@types/module-alias": "^2.0.4",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/fs-extra": "^11.0.4",
+    "@types/jsonfile": "^6.1.4",
+    "@types/find": "^0.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
