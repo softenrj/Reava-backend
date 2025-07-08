@@ -18,6 +18,7 @@
     },
     "useUnknownInCatchVariables": false,
     "outDir": "dist",
+    "rootDir": "./src"
   },
   "ts-node": {
     "swc": true,
@@ -28,13 +29,13 @@
   },
   "include": [
     "src/**/*.ts",
-    "config.ts",
-    "scripts",
-    "eslint.config.ts"
   ],
   "exclude": [
     "src/public/*",
     "tests",
-    "vitest.config.mts"
+    "vitest.config.mts",
+    "config.ts",
+    "scripts",
+    "eslint.config.ts"
   ]
 }
