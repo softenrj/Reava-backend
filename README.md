@@ -1,6 +1,6 @@
 # 🎵 Reava Backend
 
-**Reava-backend** is a robust, scalable Node.js backend built with **Express** and **TypeScript**. It serves as the core API for a dynamic music streaming platform featuring user authentication, playlist management, music curation, and AI-powered recommendations. The backend integrates **Firebase Authentication**, leverages **MongoDB** with Mongoose for data persistence, and connects to **Groq AI** for intelligent playlist generation.
+**Reava-backend** is a robust, scalable Node.js backend built with **Express** and **TypeScript**. It serves as the core API for a dynamic music streaming platform featuring user authentication, playlist management, music creation, and AI-powered recommendations. The backend integrates **Firebase Authentication**, leverages **MongoDB** with Mongoose for data persistence, and connects to **Groq AI** for intelligent playlist generation.
 
 > ⚠️ This backend is built specifically for the **Reava App**. You can find the Reava app repository here: [https://github.com/softenrj/Reava](https://github.com/softenrj/Reava)
 
@@ -106,6 +106,8 @@ NODE_ENV=development | production
 ```
 
 > **Important:** Ensure that the `FIREBASE_PRIVATE_KEY` value properly escapes newline characters and quotes.
+
+> **Note:** For local development, create a `Config/.env.development` file and place your environment variables there.
 
 This environment configuration is for the **Reava App**. For more details, visit the [Reava GitHub repository](https://github.com/softenrj/Reava).
 NODE_ENV=development | production
