@@ -107,7 +107,7 @@ NODE_ENV=development | production
 
 > **Important:** Ensure that the `FIREBASE_PRIVATE_KEY` value properly escapes newline characters and quotes.
 
-> **Note:** For local development, create a `Config/.env.development` file and place your environment variables there.
+> **Note:** For local development, create a `Config/.env.development` file in the Root Directory and place your environment variables there.
 
 This environment configuration is for the **Reava App**. For more details, visit the [Reava GitHub repository](https://github.com/softenrj/Reava).
 NODE_ENV=development | production
@@ -117,7 +117,7 @@ NODE_ENV=development | production
 - For development with hot reload:
 
 ```bash
-npm run dev
+npm run dev:hot
 ```
 
 - For production:
