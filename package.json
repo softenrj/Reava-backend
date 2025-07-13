@@ -18,6 +18,7 @@
   "engines": {
     "node": ">=16.0.0"
   },
+  "license": "MIT",
   "dependencies": {
     "@google/genai": "^1.6.0",
     "@types/express": "^5.0.3",
