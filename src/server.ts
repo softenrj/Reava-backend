@@ -35,7 +35,7 @@ if (ENV.NodeEnv === NodeEnvs.Production) {
 // Add APIs, must be after middleware
 app.use(Paths.Base, BaseRouter);
 app.get('/', (req, res) => {
-    res.json({ message: 'Welcome to the API' });
+    res.json({ message: 'Welcome to the Reava API' });
 })
 
 // Add error handler
