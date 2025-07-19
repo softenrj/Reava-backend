@@ -15,10 +15,12 @@ import ENV, { NodeEnvs } from '@src/common/constants/ENV';
 import HttpStatusCodes from '@src/common/constants/HttpStatusCodes';
 import { RouteError } from '@src/common/util/route-errors';
 import router from './route';
+import connectDb from './config/mongodb';
 
 // Server
 const app = express();
 const server = http.createServer(app);
+connectDb();
 
 // CORS
 const allowedOrigins = ['http://localhost:3000'];
