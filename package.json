@@ -1,0 +1,69 @@
+{
+  "name": "rjx-boilerplate",
+  "version": "1.0.0",
+  "description": "A modern Express.js + TypeScript starter by Raj",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development ts-node src/app.ts",
+    "dev_hot": "nodemon --watch src --ext ts --exec \"npm run dev\"",
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=production node dist/app.js",
+    "test": "vitest",
+    "lint": "eslint . --ext .ts",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf node_modules dist package-lock.json",
+    "clean-install": "npm run clean && npm install"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "_moduleAliases": {
+    "@src": "dist"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "chalk-animation": "^2.0.3",
+    "cookie-parser": "^1.4.7",
+    "firebase-admin": "^13.4.0",
+    "groq-sdk": "^0.26.0",
+    "mongoose": "^8.16.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "http": "^0.0.1-security",
+    "inserturlparams": "^2.0.5",
+    "jet-env": "^1.1.4",
+    "jet-paths": "^1.1.0",
+    "jet-validators": "^1.4.3",
+    "jsonfile": "^6.1.0",
+    "module-alias": "^2.2.3",
+    "morgan": "^1.10.0",
+    "primelogger": "^1.0.1"
+    
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@stylistic/eslint-plugin-js": "^4.4.1",
+    "@stylistic/eslint-plugin-ts": "^4.4.1",
+    "@types/chalk-animation": "^1.6.3",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jsonfile": "^6.1.4",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^20.4.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.29.0",
+    "eslint-plugin-n": "^17.20.0",
+    "fs-extra": "^11.3.0",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
