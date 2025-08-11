@@ -45,9 +45,7 @@ const userStatsUpdate = async (fireBaseUserId: string, watchTime: number = 0) =>
             console.log(chalk.gray.underline.bold(`user with userId: ${fireBaseUserId} has reached the highest rank with wathTime: ${watchTime}`))
             return;
         }
-
-        userStats.Rank = rank?._id;
-        userStats.nextRank = rank?.nextRank;
+        
         userStats.watchTime += watchTimeInSeconds;
 
         if (rank) {
@@ -66,7 +64,7 @@ const userStatsUpdate = async (fireBaseUserId: string, watchTime: number = 0) =>
                     userStats.nextRankProgress = 100;
                 }
             } else {
-                userStats.nextRankProgress = 100; 
+                userStats.nextRankProgress = 100;
             }
         }
 
